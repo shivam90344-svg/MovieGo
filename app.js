@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 http.createServer((req,res)=>{
     if(req.url=='/'){
-             fs.readFile("app.html",(err,data)=>{
+             fs.readFile("index.html",(err,data)=>{
         if(err){
             res.writeHead(404,{'Content-Type':'text/html'});
             res.end();
